@@ -1,3 +1,37 @@
+:root {
+  --primary-blue: #0079ff;
+  --secondary-blue: #60abff;
+
+  --text-primary-light: #2b3442;
+  --text-primary-dark: #ffffff;
+
+  --text-secondary-light: #4b6a9b;
+  --text-secondary-dark: #90a4d4;
+
+  --text-tertiary-light: #697c9a;
+
+  --bg-primary-light: #f6f8ff;
+  --bg-primary-dark: #141d2f;
+
+  --bg-secondary-light: #fefefe;
+  --bg-secondary-dark: #1e2a47;
+}
+
+.light-theme {
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+}
+
+.dark-theme {
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+}
+
+/* normalize css */
 *,
 *::before,
 *::after {
