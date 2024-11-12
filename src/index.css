@@ -1,8 +1,91 @@
+:root {
+  --primary-blue: #0079ff;
+  --secondary-blue: #60abff;
+
+  --text-primary-light: #2b3442;
+  --text-primary-dark: #ffffff;
+
+  --text-secondary-light: #4b6a9b;
+  --text-secondary-dark: #90a4d4;
+
+  --text-tertiary-light: #697c9a;
+
+  --bg-primary-light: #f6f8ff;
+  --bg-primary-dark: #141d2f;
+
+  --bg-secondary-light: #fefefe;
+  --bg-secondary-dark: #1e2a47;
+}
+
+.light-theme {
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+}
+
+.dark-theme {
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+}
+
+/* normalize css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+
+a {
+  text-underline-position: under;
+  text-decoration-thickness: 8;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+menu,
+ol,
+ul {
+  padding-left: 0;
+}
+
+article ol,
+article ul {
+  list-style-position: inside;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+  list-style: none;
+}
+
+label,
+button,
+select,
+summary,
+[type='radio'],
+[type='submit'],
+[type='checkbox'] {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +93,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
 }
